@@ -7,6 +7,7 @@ fn createfile() -> io::Result<()> {
     let mut filename = String::new();
     println!("Enter file name here :");
     let _filenameoutput = io::stdin().read_line(&mut filename)?;
+    filename.pop();
     let mut file = File::create(filename)?;
     println!("Wee - the whatever editor\n");
     let mut write = String::new();
