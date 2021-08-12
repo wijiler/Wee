@@ -19,6 +19,6 @@ fn createfile() -> io::Result<()> {
 
 fn main() -> io::Result<()>{
     
-        createfile();
+        createfile()?;
     Ok(())
 }
